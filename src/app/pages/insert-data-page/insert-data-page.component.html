@@ -1,0 +1,12 @@
+<form [formGroup]="insertDataForm">
+
+   <mat-form-field>
+        <mat-label>First name</mat-label>
+        <input formControlName="insertTextInputData" matInput>
+    </mat-form-field>
+   
+</form>
+
+<div>
+    <button mat-raised-button (click)="addInsertedData()">Save</button>
+</div>

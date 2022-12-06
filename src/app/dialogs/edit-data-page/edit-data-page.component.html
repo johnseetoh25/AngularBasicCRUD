@@ -1,0 +1,14 @@
+<p>edit-data-page works!</p>
+
+<form [formGroup]="editModifiedForm">
+
+    <mat-form-field>
+         <mat-label>First name</mat-label>
+         <input formControlName="insertTextInputData" matInput>
+     </mat-form-field>
+    
+ </form>
+ 
+ <div>
+     <button mat-raised-button (click)="submitModifiedData()" >Save</button>
+ </div>

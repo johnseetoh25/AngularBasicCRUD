@@ -1,0 +1,11 @@
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+button{
+    border: none;
+}
+
+.container-fluid{
+    padding: 30px;
+}

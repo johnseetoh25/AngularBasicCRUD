@@ -1,0 +1,28 @@
+<section>
+  <table mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dataList">
+      <th mat-header-cell *matHeaderCellDef> Data List </th>
+      <td mat-cell *matCellDef="let element"> {{element.insertTextInputData}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let row"> 
+        <button mat-raised-button (click)="openEditDataPage(row.id)">Edit</button> 
+        <button mat-raised-button (click)="deleteData(row.id)">Delete</button>
+      </td>
+    </ng-container>
+    
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+  </table>
+  
+</section>
+
+  
