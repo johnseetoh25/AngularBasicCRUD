@@ -19,7 +19,7 @@ export class InsertDataPageComponent {
   
   ngOnInit(): void{
     this.insertDataForm = this.fromBuilder.group({
-      insertTextInputData: ['', Validators.required],
+      insertTextInputData: [''],
     })
   }
 
