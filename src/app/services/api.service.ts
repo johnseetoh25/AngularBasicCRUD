@@ -8,7 +8,7 @@ export class ApiService {
 
   constructor(private http : HttpClient) { }
 
-  postData(data: any){
+  postData(data: any){ 
     return this.http.post<any>("http://localhost:3000/dataList/", data);
   }
 
